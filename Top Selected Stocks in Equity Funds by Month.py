@@ -63,7 +63,7 @@ column0 = ["Date", month]
 column1 = ["Total AUM", totalAUM]
 data.insert(0, column0)
 data.insert(1, column1)
-filename = "C:\\Users\\brian\\Downloads\\Top Selected Stocks in Mutual Funds3 " + month + ".csv"
+filename = "C:\\Users\\brian\\Downloads\\Top Selected Stocks in Equity Funds " + month + ".csv"
 
 with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
