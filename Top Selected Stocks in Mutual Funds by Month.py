@@ -29,7 +29,6 @@ for i in range(len(productNameCleanHeader)):
     k = 0
     for j in range(len(productNameNAVHeader)):
         if productNameCleanHeader[i] == productNameNAVHeader[j]:
-            # print(aumAprilNAVHeader[j])
             aumProductColumn.append(aumProductNAVHeader[j])
             aumPerStockColumn.append((aumProductNAVHeader[j] * percentageCleanHeader[i]) / 100)
             k = 1
@@ -54,7 +53,6 @@ for i in range(len(portfolioCodeLQ45)):
             counter += 1
             if aumPerStockColumn[j] != "null":
                 totalAUM += aumPerStockColumn[j]
-    # print(totalAUM)
 
     dictionary = {
         "Portfolio Code": portfolioCodeLQ45[i],
@@ -62,7 +60,6 @@ for i in range(len(portfolioCodeLQ45)):
     }
     data.append(dictionary.values())
 
-# print(totalAUM)
 
 column0 = ["Date", month]
 column1 = ["Total AUM", totalAUM]
